@@ -719,7 +719,7 @@ a{
     grid-template-columns: repeat(auto-fill , minmax(500px , 1fr));
 }
 @media (max-width: 767px) {
-    .Setting-page {
+    .page .Setting-page {
         grid-template-columns: minmax(100px , 1fr);
         margin-left: 10px;
         margin-right: 10px;
@@ -956,8 +956,12 @@ a{
 
 /* Start Profile */
 @media (max-width: 767px) {
-    .Profile .topp {
+    .page .Profile .topp {
         flex-direction: column;
+    }
+    .page .Profile {
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
 .Profile .topp .information {
@@ -1105,7 +1109,7 @@ a{
     grid-template-columns: repeat(auto-fill , minmax(500px , 1fr));
 }
 @media (max-width: 767px) {
-    .project {
+    .page .project {
         grid-template-columns: minmax(200px , 1fr);
         margin-left: 10px;
         margin-right: 10px;
@@ -1203,7 +1207,8 @@ a{
     grid-template-columns: repeat(auto-fill , minmax(250px , 1fr));
 }
 @media (max-width: 767px) {
-    .Courses {
+    .page .Courses {
+        grid-template-columns: minmax(100px , 1fr);
         gap: 10px;
         margin-left: 10px;
         margin-right: 10px;
@@ -1255,7 +1260,7 @@ a{
     grid-template-columns: repeat(auto-fill , minmax(250px , 1fr));
 }
 @media (max-width: 767px) {
-    .Friends {
+    .page .Friends {
         gap: 10px;
         margin-left: 10px;
         margin-right: 10px;
@@ -1326,8 +1331,11 @@ a{
     align-items: flex-start; /*عشان كل صندوق يبقا علي قد نفسه محصلوش استرتش كل مزود files*/
 }
 @media (max-width: 767px) {
-    .Files {
+    .page .Files {
         flex-direction: column;
+        gap: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
         align-items: normal; /* علي الموبيل عشان ميبقا فس مسافات كده يخلي العناصر تملئ الشاشه*/
     }
 }
@@ -1405,7 +1413,7 @@ a{
     grid-template-columns: repeat(auto-fill , minmax(400px , 1fr));
 }
 @media (max-width: 767px) {
-    .Plans {
+    .page .Plans {
         grid-template-columns: minmax(250px , 1fr);
         gap: 10px;
         margin-left: 10px;
